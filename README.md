@@ -1,6 +1,6 @@
 # teck stack
 
-  react 
-  docker
-  nginx
-  mateiral ui
+  react \
+  docker \
+  nginx \
+  mateiral ui \

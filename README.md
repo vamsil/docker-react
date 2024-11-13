@@ -1,2 +1,6 @@
-# docker-react
-react docker
+# teck stack
+
+  react 
+  docker
+  nginx
+  mateiral ui

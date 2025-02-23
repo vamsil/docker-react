@@ -4,6 +4,7 @@ import { Drawer, List, ListItem, ListItemText, ListItemIcon } from '@mui/materia
 import { Home, Info, ContactMail } from '@mui/icons-material';
 import { Link as RouterLink } from 'react-router-dom';
 import { ListItemProps } from '@mui/material/ListItem';
+import SpaceManager from './SpaceManager';
 
 // Custom Link component to handle ListItem and Link compatibility
 interface ListItemLinkProps extends ListItemProps {
@@ -34,7 +35,7 @@ const Sidebar: React.FC = () => {
         >
             <List>
                 <ListItemLink to="/" primary="Home" icon={<Home />} />
-                <ListItemLink to="/about" primary="About" icon={<Info />} />
+                <ListItemLink to="/about" primary="About" icon={< SpaceManager/>} />
                 <ListItemLink to="/contact" primary="Contact" icon={<ContactMail />} />
             </List>
         </Drawer>

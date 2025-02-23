@@ -14,8 +14,15 @@ import TopNavBar from './components/TopNabar';
 import SidebarMain from './components/SidebarMain';
 import TopNavbarNew from './components/TopNavbarNew';
 import TopNavBarFinal from './components/TopNavBarFinal';
-import Events from './pages/Events';
 import ThankYou from './pages/ThankYou';
+import EventFormNew from './pages/EventFormNew';
+import EventDataCard from './pages/EventDataCard';
+import EventFinal from './pages/EventFinal';
+import ThankYouPage from './pages/ThankYouFinal';
+import SpaceManager from './components/SpaceManager';
+import SideBarMainNew from './components/SideBarMainNew';
+import InqueryManager from './components/InqueryManager';
+import WorkFlowManagerNew from './components/WorkFlowManagerNew';
 
 const App: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -27,15 +34,19 @@ const App: React.FC = () => {
           <TopNavBarFinal  />
         </Box>
         <Box sx={{ display: 'flex', flex: 1, overflowY: 'auto' }}>
-          < SidebarMain />
+          < SideBarMainNew />
           <Box component="main" sx={{ flexGrow: 1, p: 0 }}>
             <Toolbar />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/about" element={<SpaceManager/>} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/events" element={<Events/>} />
-              <Route path="/thank-you" element={<ThankYou />} />
+              <Route path="/events" element={<EventFinal/>} />
+              <Route path="/thank-you" element={<ThankYouPage />} />
+              <Route path="/sm" element={<SpaceManager />} />
+              <Route path="/wf" element={<WorkFlowManagerNew/>} />
+              <Route path="/iq" element={<InqueryManager/>} />
+
 
 
             </Routes>

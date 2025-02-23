@@ -46,6 +46,7 @@ const Sidebar = () => {
           </ListItem>
         ))}
       </List>
+      
       </Box> 
     </SidebarContainer>
   );

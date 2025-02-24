@@ -8,7 +8,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     position: "relative",
-    top: "10%",
+    top: "2%",
     margin: 0,
     overflow: "hidden",
     cursor: "pointer", // Makes it clear that the image is clickable
@@ -38,7 +38,7 @@ const FullPageImage = () => {
       </div>
 
       {/* Modal Dialog */}
-      <Dialog open={open} onClose={() => setOpen(false)} maxWidth="md" fullWidth>
+      <Dialog open={open} onClose={() => setOpen(false)} maxWidth="lg" fullWidth>
         <DialogContent>
           <img src="workflowImage_dialog.png" alt="Expanded View" style={styles.modalImage} />
         </DialogContent>

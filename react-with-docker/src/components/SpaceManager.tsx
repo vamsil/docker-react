@@ -6,16 +6,17 @@ const styles = {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      
+      position: "relative",
+      top: "2%",      
       margin: 0,
       overflow: 'hidden',
     },
     image: {
       position: 'relative',
-      top: 0,
+      top: 1,
       left: '0',
       width: '100%',
-      height: '90%',
+      height: '80%',
       objectFit: 'cover', // Ensures the image covers the entire area
     },
   };
